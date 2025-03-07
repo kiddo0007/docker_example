@@ -17,3 +17,5 @@ COPY --from=builder /go/bin/bom /usr/local/bin/bom
 HEALTHCHECK --interval=120s --timeout=245s --start-period=10s \
 CMD     bom version || exit 1
 ENTRYPOINT      []
+
+
